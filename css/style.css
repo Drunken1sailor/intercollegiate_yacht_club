@@ -35,11 +35,25 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;} 
 /*-------------------------------*/
 /*================================index===============================*/
+@font-face{
+	font-family: 'SuisseIntl'; 
+	src: local('SuisseIntl'), url('../fonts/SuisseIntl-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 main{
+	font-family: 'SuisseIntl';
 	position: relative;
 	width: 100%;
-	font-family: 'Noto Sans', sans-serif;
-	color: ;
+	/*font-family: 'Noto Sans', sans-serif;*/
+}
+h3{
+	font-size: 24px;
+	text-transform: uppercase;
+}
+.wrapper{
+	width: 80%;
+	margin: 0 auto;
 }
 .bg{
 	width: 100%;
@@ -66,53 +80,89 @@ main{
 }
 .header{
 	width: 100%;
-	height: 500px;
+	height: 100vh;
 	position: relative;
-	margin: 0 0 120px;
-	padding: 150px 0 190px;
+	/*margin: 0 0 0px;*/
+	/*padding: 150px 0 190px;*/
+}
+.header__wrapper{
+	min-height: 100vh;
+	display: flex;
+	justify-items: center;
+	align-items: center;
 }
 .header__bg{
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	position: absolute;
 	top: 0;
 	left: 0;
 }
-.header__bg img{
+/*.header__bg img{
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
 	object-fit: cover;
-}
-.header__bg video{
+}*/
+.video_bg{
 	width: 100%;
-	height: 1080px;	
+	min-height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;	
 }
 .header__bg::after{
 	content:'';
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background-color:#102D4B;
-	opacity: 0.55;
+	background-color:#000;
+	opacity: 0.2;
 }
 .nav{
 	height: 60px;
 	width: 100%;
-	display: flex;
 	position: fixed;
 	top: 0;
 	right: 0;
-	justify-content: flex-end;
-	align-items: center;
-	background-color: #fff;
-	border-bottom: 2px solid #B3B3B3;
+	background-color: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(5px);
+	/*border-bottom: 2px solid #B3B3B3;*/
 	z-index: 1000;
 }
+.nav__wrapper{
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+.nav__right{
+	display: flex;
+}
+.nav__logo{
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	transition: transform 0.2s ease 0s;
+}
+.nav__logo img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: contain;
+}
+.nav__logo:hover{
+	transform: scale(1.05);
+}
 .nav__link{
-	color: #000;
+	color: #fff;
 	font-size: 20px;
 	margin: 0 15px;
 	transition: transform 0.3s ease 0s;
@@ -126,7 +176,6 @@ main{
 	height: 25px;
 	position: relative;
 	transition: transform 0.2s ease 0s;
-	margin: 0 30px 0 20px;
 }
 .nav__search img{
 	position: absolute;
@@ -140,71 +189,77 @@ main{
 	transform: scale(1.1);
 }
 .header__title{
+	width: 800px;
 	position: relative;
 	z-index: 10;
-	width: 850px;
-	height: 200px;
-	padding: 50px 0 0;
-	margin: 0 auto;
-	text-align: center;
-	background-color: rgba(255, 255, 255, 0.9);
+	/*padding: 50px 0 0;*/
+	/*background-color: rgba(255, 255, 255, 0.9);*/
 	border-radius: 50px;
 	/*box-shadow: 0 0 20px 2px #000;*/
+	text-align: left;
+	text-shadow: 1px 1px 0 #000;
+	color: #fff;
 }
 .title__text{
-	font-size: 38px;
-	margin-bottom: 20px;
+	font-size: 28px;
+	line-height:1.1;
+	text-transform: uppercase;
+}
+.title__text::after{
+	content: '';
+	position: absolute;
+	top: 70px;
+	left: 0px;
+	width: 300px;
+	height: 3px;
+	background-color: #439BDC;
 }
 .subtitle{
+	margin: 20px 0 0;
 	font-size: 24px;
 }
 .about{
 	position: relative;
-	width: 80%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border-radius: 50px;
 	background-color: #fff;
-	padding: 0 50px;
-	margin: 0 auto 120px;
-	box-shadow: 0 0 20px 5px #000;
+	margin: 0 auto;
+	/*box-shadow: 0 0 20px 5px #000;*/
 }
-.about_title{
+.about__title{
 	align-self: flex-start;
-	font-size: 32px;
-	margin: 50px auto 25px;
+	margin: 100px auto 25px;
 	position: relative;
 	text-transform: uppercase;
 }
-.about_title::after{
+.about__title::after{
 	content: '';
 	position: absolute;
 	top: 40px;
-	left: -20px;
-	width: 140px;
-	height: 1px;
-	background-color: #B3B3B3;
+	left: 0px;
+	width: 100px;
+	height: 3px;
+	background-color: #439BDC;
 }
 .about__text{
-	font-size: 24px;
-	text-align: center;
+	font-size: 18px;
+	text-align: justify;
 	line-height: 30px;
-	margin: 0 0 100px;
+	margin: 0 0 50px;
 }
-.participants{
-}
-.participants__title{
-	font-size: 24px;
-	margin: 0 0 30px;
-	text-align: center;
-}
-.participants__universities{
+.about__row{
 	display: flex;
-	position: relative;
-	margin: 0 0 70px;
+	flex-wrap: wrap;
+	margin: 50px;
 }
-.participants__universities::after{
+.about__column{
+	flex: 0 0 50%;
+	padding: 0 10px;
+	margin: 0 0 20px;
+	font-size: 18px;
+}
+/*.participants__universities::after{
 	content: '';
 	display: block;
 	position: absolute;
@@ -214,14 +269,14 @@ main{
 	height: 1px;
 	margin: 0 auto;
 	background-color: #B3B3B3;
-}
+}*/
 .universities__img{
 	width: 240px;
 	height: 240px;
 	position: relative;
 	overflow: hidden;
 	margin:0 20px;
-	border: 2px solid #B1B1B1;
+	border: 4px solid #439BDC;
 	border-radius: 10px;
 	transition: transform 0.3s ease 0s;
 }
@@ -236,12 +291,86 @@ main{
 	left: 0;
 	object-fit: cover;
 }
+.parallax{
+	height: 540px;
+}
+.news{
+	height: 500px;
+	position: relative;
+	background-color: #fff;
+	padding: 50px 0 50px;
+}
+.news-section__title{
+	position: relative;
+	margin: 0 0 50px;
+}
+.news-section__title::after{
+	content: '';
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100px;
+	height: 3px;
+	background-color: #439BDC;
+}
+.news__elements{
+	display: flex;
+}
+.main__news{
+	flex: 0 0 50%;
+}
+.second__news{
+	flex: 0 0 50%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.news__row{
+	display: flex;
+}
+.news__column{
+	flex: 0 0 50%;
+}
+.news__img{
+	position: relative;
+	width: 100%;
+}
+.news__img img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+.main-news__img{
+	height: 400px;
+}
+.second-news__img{
+	height: 200px;
+}
+.participants{
+	position: relative;
+	margin: 0 auto;
+	padding: 50px 0 50px;
+	background-color: #161616;
+}
+.participants__title{
+	position: relative;
+	margin: 0 0 50px;
+	color: #fff;
+}
+.participants__universities{
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
 .footer{
 	position: relative;
 	width: 100%;
 	height: 300px;
 	background-color: #fff;
 	padding: 55px 0 0 0;
+	font-size: 16px;
 }
 .contacts{
 	width: 80%;
@@ -252,7 +381,6 @@ main{
 	width: 250px;
 	display: flex;
 	align-items: center;
-	font-size: 20px;
 	margin: 0 0 20px;
 }
 .contact img{
