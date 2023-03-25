@@ -41,6 +41,12 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face{
+	font-family: 'SuisseIntl'; 
+	src: local('SuisseIntl'), url('../fonts/SuisseIntl-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
 main{
 	font-family: 'SuisseIntl';
 	position: relative;
@@ -51,10 +57,43 @@ h3{
 	font-size: 24px;
 	text-transform: uppercase;
 }
+.regularText{
+	font-size: 18px;
+}
 .wrapper{
 	width: 80%;
 	margin: 0 auto;
 }
+.preloader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #F1F2F3;
+	z-index: 1001;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+	transition: all 1s ease;
+}
+.preloader_active{
+	opacity: 0;
+	visibility: hidden;
+}
+.preloader__img{
+	pointer-events: none;
+}
+/*.shield{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 1010;
+	pointer-events: none;
+}*/
 .bg{
 	width: 100%;
 	height: 100%;
@@ -243,7 +282,6 @@ h3{
 	background-color: #439BDC;
 }
 .about__text{
-	font-size: 18px;
 	text-align: justify;
 	line-height: 30px;
 	margin: 0 0 50px;
@@ -295,7 +333,7 @@ h3{
 	height: 540px;
 }
 .news{
-	height: 500px;
+	/*height: 800px;*/
 	position: relative;
 	background-color: #fff;
 	padding: 50px 0 50px;
@@ -318,6 +356,7 @@ h3{
 }
 .main__news{
 	flex: 0 0 50%;
+	margin-right: 10px;
 }
 .second__news{
 	flex: 0 0 50%;
@@ -329,10 +368,12 @@ h3{
 }
 .news__column{
 	flex: 0 0 50%;
+	padding:0 10px 20px;
 }
 .news__img{
 	position: relative;
 	width: 100%;
+	margin-bottom: 10px;
 }
 .news__img img{
 	position: absolute;
@@ -348,6 +389,19 @@ h3{
 .second-news__img{
 	height: 200px;
 }
+.news__title{
+	font-size: 18px;
+	/*font-weight: 700;*/
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+.news__date{
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.news__text{
+	text-align: justify;
+}
 .participants{
 	position: relative;
 	margin: 0 auto;
@@ -358,6 +412,15 @@ h3{
 	position: relative;
 	margin: 0 0 50px;
 	color: #fff;
+}
+.participants__title::after{
+	content: '';
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100px;
+	height: 3px;
+	background-color: #439BDC;
 }
 .participants__universities{
 	display: flex;
