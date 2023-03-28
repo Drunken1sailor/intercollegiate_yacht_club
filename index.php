@@ -96,6 +96,7 @@
 							<div class="main-news__text news__text regularText">
 								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio facere laboriosam maxime amet velit nam quia voluptatem labore architecto, vero, ad reprehenderit, repellat nobis magnam laudantium eveniet, iure aliquam illo.
 							</div>
+							<a class="allNews__link news__title" href="news.php">все новости</a>
 						</div>
 						<div class="second__news news__row">
 							<div class="news__column">

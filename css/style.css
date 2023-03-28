@@ -402,6 +402,13 @@ h3{
 .news__text{
 	text-align: justify;
 }
+.main-news__text{
+	margin-bottom: 10px;
+}
+.allNews__link{
+	text-decoration: underline;
+	color: #439BDC;
+}
 .participants{
 	position: relative;
 	margin: 0 auto;
