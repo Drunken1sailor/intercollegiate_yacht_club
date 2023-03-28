@@ -10,10 +10,6 @@
 </head>
 <body>
 	<main>
-		<div class="preloader" id="preloader">
-			<!-- <div class="shield"></div> -->
-			<img class="preloader__img" src="img/index/loading.svg">
-		</div>
 		<div class="bg">
 			<img src="img/index/bg.jpg">
 		</div>
@@ -44,6 +40,188 @@
 				</div>
 			</div>
 		</header>
+
+		<section class="news all-news">
+			<div class="wrapper">
+				<h3 class="news-section__title">
+					<p>новости</p>
+				</h3>
+				<div class="all-news__body">
+					<div class="news__elements">
+						<div class="all-news__row">
+							<div class="all-news__column">
+								<div class="second-news__img news__img">
+									<img src="img/index/news/newsImg.jpg">
+								</div>
+								<div class="second-news__title news__title">
+									заголовок новости
+								</div>
+								<div class="second-news__date news__date">
+									01.01.2023
+								</div>
+								<div class="second-news__text news__text regularText">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio facere laboriosam maxime amet velit nam quia voluptatem labore architecto, vero, ad reprehenderit, repellat nobis magnam laudantium eveniet, iure aliquam illo.
+								</div>
+							</div>
+							<div class="all-news__column">
+								<div class="second-news__img news__img">
+									<img src="img/index/news/newsImg.jpg">
+								</div>
+								<div class="second-news__title news__title">
+									заголовок новости
+								</div>
+								<div class="second-news__date news__date">
+									01.01.2023
+								</div>
+								<div class="second-news__text news__text regularText">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio facere laboriosam maxime amet velit nam quia voluptatem labore architecto, vero, ad reprehenderit, repellat nobis magnam laudantium eveniet, iure aliquam illo.
+								</div>
+							</div>
+							<div class="all-news__column">
+								<div class="second-news__img news__img">
+									<img src="img/index/news/newsImg.jpg">
+								</div>
+								<div class="second-news__title news__title">
+									заголовок новости
+								</div>
+								<div class="second-news__date news__date">
+									01.01.2023
+								</div>
+								<div class="second-news__text news__text regularText">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio facere laboriosam maxime amet velit nam quia voluptatem labore architecto, vero, ad reprehenderit, repellat nobis magnam laudantium eveniet, iure aliquam illo.
+								</div>
+							</div>
+							<div class="all-news__column">
+								<div class="second-news__img news__img">
+									<img src="img/index/news/newsImg.jpg">
+								</div>
+								<div class="second-news__title news__title">
+									заголовок новости
+								</div>
+								<div class="second-news__date news__date">
+									01.01.2023
+								</div>
+								<div class="second-news__text news__text regularText">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio facere laboriosam maxime amet velit nam quia voluptatem labore architecto, vero, ad reprehenderit, repellat nobis magnam laudantium eveniet, iure aliquam illo.
+								</div>
+							</div>
+							<div class="all-news__column">
+								<div class="second-news__img news__img">
+									<img src="img/index/news/newsImg.jpg">
+								</div>
+								<div class="second-news__title news__title">
+									заголовок новости
+								</div>
+								<div class="second-news__date news__date">
+									01.01.2023
+								</div>
+								<div class="second-news__text news__text regularText">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio facere laboriosam maxime amet velit nam quia voluptatem labore architecto, vero, ad reprehenderit, repellat nobis magnam laudantium eveniet, iure aliquam illo.
+								</div>
+							</div>
+							<div class="all-news__column">
+								<div class="second-news__img news__img">
+									<img src="img/index/news/newsImg.jpg">
+								</div>
+								<div class="second-news__title news__title">
+									заголовок новости
+								</div>
+								<div class="second-news__date news__date">
+									01.01.2023
+								</div>
+								<div class="second-news__text news__text regularText">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio facere laboriosam maxime amet velit nam quia voluptatem labore architecto, vero, ad reprehenderit, repellat nobis magnam laudantium eveniet, iure aliquam illo.
+								</div>
+							</div>
+							<div class="all-news__column">
+								<div class="second-news__img news__img">
+									<img src="img/index/news/newsImg.jpg">
+								</div>
+								<div class="second-news__title news__title">
+									заголовок новости
+								</div>
+								<div class="second-news__date news__date">
+									01.01.2023
+								</div>
+								<div class="second-news__text news__text regularText">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio facere laboriosam maxime amet velit nam quia voluptatem labore architecto, vero, ad reprehenderit, repellat nobis magnam laudantium eveniet, iure aliquam illo.
+								</div>
+							</div>
+							<div class="all-news__column">
+								<div class="second-news__img news__img">
+									<img src="img/index/news/newsImg.jpg">
+								</div>
+								<div class="second-news__title news__title">
+									заголовок новости
+								</div>
+								<div class="second-news__date news__date">
+									01.01.2023
+								</div>
+								<div class="second-news__text news__text regularText">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio facere laboriosam maxime amet velit nam quia voluptatem labore architecto, vero, ad reprehenderit, repellat nobis magnam laudantium eveniet, iure aliquam illo.
+								</div>
+							</div>
+							<div class="all-news__column">
+								<div class="second-news__img news__img">
+									<img src="img/index/news/newsImg.jpg">
+								</div>
+								<div class="second-news__title news__title">
+									заголовок новости
+								</div>
+								<div class="second-news__date news__date">
+									01.01.2023
+								</div>
+								<div class="second-news__text news__text regularText">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio facere laboriosam maxime amet velit nam quia voluptatem labore architecto, vero, ad reprehenderit, repellat nobis magnam laudantium eveniet, iure aliquam illo.
+								</div>
+							</div>
+							<div class="all-news__column">
+								<div class="second-news__img news__img">
+									<img src="img/index/news/newsImg.jpg">
+								</div>
+								<div class="second-news__title news__title">
+									заголовок новости
+								</div>
+								<div class="second-news__date news__date">
+									01.01.2023
+								</div>
+								<div class="second-news__text news__text regularText">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio facere laboriosam maxime amet velit nam quia voluptatem labore architecto, vero, ad reprehenderit, repellat nobis magnam laudantium eveniet, iure aliquam illo.
+								</div>
+							</div>
+							<div class="all-news__column">
+								<div class="second-news__img news__img">
+									<img src="img/index/news/newsImg.jpg">
+								</div>
+								<div class="second-news__title news__title">
+									заголовок новости
+								</div>
+								<div class="second-news__date news__date">
+									01.01.2023
+								</div>
+								<div class="second-news__text news__text regularText">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio facere laboriosam maxime amet velit nam quia voluptatem labore architecto, vero, ad reprehenderit, repellat nobis magnam laudantium eveniet, iure aliquam illo.
+								</div>
+							</div>
+							<div class="all-news__column">
+								<div class="second-news__img news__img">
+									<img src="img/index/news/newsImg.jpg">
+								</div>
+								<div class="second-news__title news__title">
+									заголовок новости
+								</div>
+								<div class="second-news__date news__date">
+									01.01.2023
+								</div>
+								<div class="second-news__text news__text regularText">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio facere laboriosam maxime amet velit nam quia voluptatem labore architecto, vero, ad reprehenderit, repellat nobis magnam laudantium eveniet, iure aliquam illo.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<footer class="footer">
 			<div class="contacts">
 				<div class="mail contact">
@@ -66,5 +244,5 @@
 	</main>
 </body>
 <!-- <script src="js/main.js"></script> -->
-<script src="js/preloader.js"></script>
+<!-- <script src="js/preloader.js"></script> -->
 </html>
