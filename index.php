@@ -14,14 +14,16 @@
 			<!-- <div class="shield"></div> -->
 			<img class="preloader__img" src="img/index/loading.svg">
 		</div>
-		<div class="bg">
+		<!-- <div class="bg">
 			<img src="img/index/bg.jpg">
-		</div>
+		</div> -->
 		<header class="header">
 			<div class="wrapper header__wrapper">
 				<div class="header__bg">
 					<!-- <img src="img/index/header_bg.jpg"> -->
+					<div class="header__shadow"></div>
 					<video preload="auto" class="video_bg" autoplay muted loop>
+						<!-- <source type="video/webm" src="videos/index/header/bg.webm"> -->
 						<source type="video/mp4" src="videos/index/header/bg.mp4">
 					</video>
 				</div>
@@ -74,8 +76,8 @@
 				</div>
 			</div>
 		</section>
-		<section class="parallax">
-		</section>
+		<!-- <section class="parallax">
+		</section> -->
 		<section class="news">
 			<div class="wrapper">
 				<h3 class="news-section__title">
@@ -96,7 +98,7 @@
 							<div class="main-news__text news__text regularText">
 								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio facere laboriosam maxime amet velit nam quia voluptatem labore architecto, vero, ad reprehenderit, repellat nobis magnam laudantium eveniet, iure aliquam illo.
 							</div>
-							<a class="allNews__link news__title" href="news.php">все новости</a>
+							<a class="allNews__link news__title" href="news.php">все новости →</a>
 						</div>
 						<div class="second__news news__row">
 							<div class="news__column">
